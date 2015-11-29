@@ -2,12 +2,12 @@
 
 'use strict';
 
-var ws = require('../lib/app');
-
-process.on('SIGINT', function() {
-  console.log('Shutting down...');
-  ws.crowdPulse.disconnect();
-  console.log('See you in another life, brotha.');
-});
-
-ws.run();
+require('../lib/app')()
+  .then(function(ws) {
+    process.on('SIGINT', function() {
+      console.log('Shutting down...');
+      ws.crowdPulse.disconnect();
+      ws.server.close();
+      console.log('See you in another life, brotha.');
+    });
+  });
