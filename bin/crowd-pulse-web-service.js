@@ -4,12 +4,10 @@
 
 var ws = require('../lib/app');
 
-var gracefulExit = function() {
+process.on('SIGINT', function() {
   console.log('Shutting down...');
   ws.crowdPulse.disconnect();
   console.log('See you in another life, brotha.');
-};
-
-process.on('SIGTERM', gracefulExit);
+});
 
 ws.run();

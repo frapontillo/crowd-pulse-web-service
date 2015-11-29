@@ -7,7 +7,7 @@
     "crowd-pulse-web-service": "bin/crowd-pulse-web-service.js"
   },
   "scripts": {
-    "start": "node lib/app.js"
+    "start": "node bin/crowd-pulse-web-service.js"
   },
   "author": "Francesco Pontillo <francescopontillo@gmail.com>",
   "license": "Apache-2.0",

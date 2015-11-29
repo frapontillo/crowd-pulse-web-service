@@ -21,7 +21,7 @@ var _ = require('lodash');
 var qSend = require('../lib/expressQ').send;
 var qErr = require('../lib/expressQ').error;
 var router = require('express').Router();
-var CrowdPulse = require('crowd-pulse-data-node');
+var CrowdPulse = require('crowd-pulse-data');
 var config = require('../lib/config');
 
 module.exports = function() {

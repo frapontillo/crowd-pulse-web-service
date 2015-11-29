@@ -1,9 +1,3 @@
-.gradle/
 .idea/
-build/
-gradle/
 node_modules/
 *.iml
-build.gradle
-gradlew
-gradlew.bat
