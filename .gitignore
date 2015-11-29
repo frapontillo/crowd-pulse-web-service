@@ -1,0 +1,5 @@
+.gradle/
+.idea/
+node_modules/
+*.iml
+config.json
